@@ -15,11 +15,17 @@ df.at[4, 'B'] #int row index and string name of column
 
 **print out entire dataframe**
 ```
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+with pd.option_context('display.max_rows', None, 'display.max_columns', None):  #more options can be specified also
     print(df)
 ```
 
 **convert dataframe to dict where a column is a unique key**
 ```
 df.set_index('id').to_dict()
+```
+
+**get data type of pandas column(s)**
+```
+df.column.dtype #specific single column data type
+df.dtypes #all column data types
 ```
