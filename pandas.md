@@ -1,6 +1,6 @@
 **get subset of main dataframe isolating specific columns**
 ```
-df['column_name1', 'column_name2']
+df[['column_name1', 'column_name2']]
 ```
 
 **get all values in dataframe**
